@@ -29,8 +29,8 @@ cp -r iso19139.rndt-master/src/main/plugin/iso19139.rndt geonetwork/WEB-INF/data
 
 ## Configure the plugin
 
-Remember to change the prefix for UUID.
-You can simply fix the [line 52 of this file](src/main/plugin/iso19139.rndt/update-fixed-info.xsl#L52) replacing ```p_xx``` with your prefix, eg. ```p_tn```
+* Remember to change the prefix for UUID. You can simply fix the [line 52 of this file](src/main/plugin/iso19139.rndt/update-fixed-info.xsl#L52) replacing ```p_xx``` with your prefix, eg. ```p_tn```
+* If you are using a GeoNetwork 3.4.x version you need to comment the ```appMinorVersionSupported``` tag in the [schema-ident.xml](src/main/plugin/iso19139.rndt/schema-ident.xml#L7) which is not supported by the schema.
 
 ## Load models and examples
 
