@@ -384,12 +384,12 @@
 	<element name="gmd:lineage">
 		<label>Genealogia</label>
 		<description>Testo descrittivo sulla storia del processo e/o la qualità generale del set di dati</description>
-		<condition>Obbligatoro</condition>
+		<condition>Obbligatorio</condition>
 		Testo libero. Descrivere la provenienza e il processo di produzione dei dati, fornendo informazioni sulla storia e il ciclo di vita, dalla rilevazione e l’acquisizione fino alla forma attuale. L’elemento può includere qualsiasi informazione sulla qualità richiesta per garantire l’interoperabilità e la valutazione dei dati e, dove necessario, una dichiarazione che indica se l'insieme di dati è stato convalidato o sottoposto a un controllo di qualità, se si tratta della versione ufficiale (qualora esistano più versioni) e se ha una validità legale.
 	</element>
 	<element name="gmd:statement" id="83.0">
-		<label>Genealogia</label>
-		<description>Testo descrittivo della “genealogia” dei dati</description>
+		<label>Definizione</label>
+		<description>Dichiarazioni generali del produttore di dati sull'origine dell'insieme di dati</description>
 		<condition>Obbligatorio</condition>
 	</element>
 	<element name="gmd:specification">
