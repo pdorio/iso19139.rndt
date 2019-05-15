@@ -49,7 +49,7 @@
         <xsl:choose>
             <xsl:when test="$isNew">
 
-                <xsl:value-of select="concat('p_tn:',/root/env/uuid)"/>
+                <xsl:value-of select="concat('p_xx:',/root/env/uuid)"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="//gmd:fileIdentifier/gco:CharacterString"/>

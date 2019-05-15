@@ -17,4 +17,23 @@ The code is donated to the geonetwork community for its public usage.
 
  The development of this plugin is based on rndt plugin built for Geonetwork 2.x, you can find it  here: https://github.com/geonetwork/schema-plugins
  
+## Install the plugin
+
+1. copy the plugin in the geonetwork schemas directory:
+
+```
+cp -r iso19139.rndt-master/src/main/plugin/iso19139.rndt geonetwork/WEB-INF/data/config/schema_plugins/. 
+```
+
+2. Restart geonetwork
+
+## Configure the plugin
+
+Remember to change the prefix for UUID.
+You can simply fix the [line 52 of this file](src/main/plugin/iso19139.rndt/update-fixed-info.xsl#L52) replacing ```p_xx``` with your prefix, eg. ```p_tn```
+
+## Load models and examples
+
+Simply go to the Admin console -> Metadata & templates, check the RNDT plugin and clic on "Load templates for selected standards"
+
 
