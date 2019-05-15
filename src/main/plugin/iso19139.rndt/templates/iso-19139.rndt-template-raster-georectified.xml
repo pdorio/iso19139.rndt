@@ -70,6 +70,22 @@ e" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
 	<gmd:metadataStandardVersion>
 		<gco:CharacterString>10 novembre 2011</gco:CharacterString>
 	</gmd:metadataStandardVersion>
+	<gmd:locale>  
+		<gmd:PT_Locale id="IT">
+			<gmd:languageCode>
+				<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ita"/>
+				</gmd:languageCode>
+			<gmd:characterEncoding/>
+		</gmd:PT_Locale>
+	  </gmd:locale>
+	<gmd:locale>  
+		<gmd:PT_Locale id="DE">
+			<gmd:languageCode>
+				<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger"/>
+				</gmd:languageCode>
+			<gmd:characterEncoding/>
+		</gmd:PT_Locale>
+	  </gmd:locale>
 	<!-- RAPPRESENTAZIONE SPAZIALE DEI DATI RASTER -->
 	<gmd:spatialRepresentationInfo>
 		<gmd:MD_Georectified>
