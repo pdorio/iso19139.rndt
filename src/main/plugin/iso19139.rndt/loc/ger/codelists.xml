@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codelists xmlns:gmd="http://www.isotc211.org/2005/gmd">
+   <!-- ==================================================== -->
+   <!-- RNDT -->
+   <codelist name="gmd:CI_DateTypeCode">
+      <entry>
+         <code>creation</code>
+         <label>Erstellung</label>
+         <description>Das Datum gibt an, wann die Ressource erstmalig erstellt wurde</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>publication</code>
+         <label>Publikation</label>
+         <description>Das Datum gibt an, wann die Ressource publiziert wurde</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>revision</code>
+         <label>Überarbeitung</label>
+         <description>Das Datum gibt an, wann die Ressource zuletzt überarbeitet/aktualisiert wurde</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>rilievo</code>
+         <label>Erhebungszeitpunkt</label>
+         <description>Das Datum gibt an, wann ein Phänomen beobachtet wurde (z.B. Zeitpunkt des Flugs)</description>
+      </entry>
+   </codelist>
+   <!-- ==================================================== -->
+   <!-- RNDT -->
+   <codelist name="gmd:MD_DimensionNameTypeCode">
+      <entry>
+         <code>row</code>
+         <label>Zeile</label>
+         <description>Mathematische y-Achse (Ordinate)</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>column</code>
+         <label>Spalte</label>
+         <description>Mathematische x-Achse (Abszisse)</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>vertical</code>
+         <label>Vertikale</label>
+         <description>mathematische z-Achse (Vertikale)</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+   </codelist>
+   <!-- ==================================================== -->
+   <!-- RNDT -->
+   <codelist name="gmd:MD_ScopeCode">
+      <entry>
+         <code>dataset</code>
+         <label>Datenbestand</label>
+         <description>Information gilt für einen Datenbestand</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>series</code>
+         <label>Serie</label>
+         <description>Information gilt für eine Serie (Der Begriff Serie bezieht sich auf jeglichen Zusammenschluss über DS_Aggregate)</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>service</code>
+         <label>Service</label>
+         <description>Information gilt für einen Dienst, welcher von einem Anbieter über definierte Schnittstellen einem Dienstnutzer zur Verfügung gestellt wird</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>tile</code>
+         <label>Kachel</label>
+         <description>Information gilt für eine räumliche Untereinheit von geographischen Daten</description>
+      </entry>
+   </codelist>
+   <!-- ==================================================== -->
+   <!-- RNDT -->
+   <codelist name="gmd:MD_RestrictionCode">
+      <entry>
+         <code>copyright</code>
+         <label>Urheberrecht</label>
+         <description>Ressource unterliegt der jeweiligen Gesetzgebung zum Urheberrecht</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>patent</code>
+         <label>Patent</label>
+         <description>Ressource unterliegt der jeweiligen Gesetzgebung zum Patenrecht</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>patentPending</code>
+         <label>Patent angemeldet</label>
+         <description>Ressource ist zum Patent angemeldet</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>trademark</code>
+         <label>Warenzeichen</label>
+         <description>Ressource unterliegt der jeweiligen Gesetzgebung zum Markenrecht</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>license</code>
+         <label>Lizenz</label>
+         <description>Ressource unterliegt lizenzrechtlichen Bestimmungen</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>intellectualPropertyRights</code>
+         <label>Geistiges Eigentum</label>
+         <description>Ressource unterliegt der jeweiligen Gesetzgebung zum Schutz des geistigen Eigentums</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>restricted</code>
+         <label>Beschränkter Zugang</label>
+         <description>Daten, die von der allgemeinen Offenlegung und Verbreitung ausgeschlossen sind</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>otherRestrictions</code>
+         <label>Benutzerdeifinierte Einschränkungen</label>
+         <description>Andere Einschränkungen, die oben nicht aufgeführt sind</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>datoPubblico</code>
+         <label>Frei zugängliche Daten</label>
+         <description>Dato formato o comunque trattato da una Pubblica Amministrazione conoscibile da chiunque (cfr. art. 1 Codice A.D.)</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+   </codelist>
+   <!-- ==================================================== -->
+   <!-- RNDT -->
+   <codelist name="gmd:MD_SpatialRepresentationTypeCode">
+      <entry>
+         <code>vector</code>
+         <label>Vektordaten</label>
+         <description>Zur Darstellung geografischer Informationen werden Vektordaten verwendet</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>grid</code>
+         <label>Rasterdaten</label>
+         <description>Zur Darstellung geografischer Informationen werden Rasterdaten verwendet</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>textTable</code>
+         <label>Text, Tabelle</label>
+         <description>Zur Darstellung geografischer Informationen werden textliche oder tabellarische Daten verwendet</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>tin</code>
+         <label>TIN</label>
+         <description>Triangulated Irregular Network - Flächeninterpolation mittels Dreiecksvermaschung</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+   </codelist>
+   <!-- ==================================================== -->
+   <!-- RNDT -->
+   <codelist name="gmd:MD_TopicCategoryCode">
+      <entry>
+         <code>farming</code>
+         <label>Landwirtschaft</label>
+         <description>Tierzucht und/oder Pflanzenanbau, z.B. Agrarindustrie, Bewässerung, Aquakultur, Plantage, Beweidung, Schädlinge und Krankheiten, die Anbaupflanzen oder Viehbestände beeinflussen</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>biota</code>
+         <label>Fauna/Flora</label>
+         <description>Flora und/oder Fauna in der natürlichen Umgebung, z.B. wild lebende Tiere, Vegetation, Biowissenschaften, Ökologie, Wildnis, marine Lebewesen, Feuchtgebiete, Habitate, Biotope</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>boundaries</code>
+         <label>Grenzen</label>
+         <description>Gesetzlich festgelegte Grenzen, z.B. politische und administrative Grenzen</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>climatologyMeteorologyAtmosphere</code>
+         <label>Klimatologie und Meteorologie</label>
+         <description>Prozesse und Naturereignisse der Atmosphäre inkl. Klimatologie und Meteorologie, z.B. Wolkenbedeckung, Wetter, Klima, Witterungsverhältnisse, Klimawandel, Niederschlag</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>economy</code>
+         <label>Wirtschaft</label>
+         <description>Wirtschaftliche Aktivitäten, Verhältnisse und Beschäftigung, z.B. Produktion, Arbeit, Einkommen, Handel, Industrie, Tourismus und Ökotourismus, Forstwirtschaft, Fischerei, kommerzielle und subsistente Jagd, Erkundung und Ausbeutung von Ressourcen, wie Minerale, Öl und Gas</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>elevation</code>
+         <label>Höhenangaben</label>
+         <description>Höhenangabe bezogen auf ein Höhenreferenzsystem, z.B. Höhenlage, Bathymetrie, digitale Geländemodelle, Hangneigung, Höhenmodelle, abgeleitete Daten</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>environment</code>
+         <label>Umwelt</label>
+         <description>Umweltressourcen, Umweltschutz und Umwelterhaltung, z.B. Umweltverschmutzung, Abfalllagerung und -verwertung, Umweltverträglichkeitsstudie, Umweltrisikomonitoring, Naturreservate, Landschaft</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>geoscientificInformation</code>
+         <label>Geowissenschaftliche Informationen</label>
+         <description>Geowissenschaftliche Informationen, z.B. geophysikalische Eigenschaften und Prozesse, Geologie, Minerale, Zusammensetzung, Struktur und Entstehung des Erdgesteins, Erdbebenrisikoanalysen, vulkanische Aktivität, Erdrutsche, gravimetrische Informationen, Böden, Permafrost, Hydrogeologie, Erosion</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>health</code>
+         <label>Gesundheitswesen</label>
+         <description>Gesundheit, Gesundheitsdienste, Humanökologie und Betriebssicherheit, z.B. Erkrankungen und Krankheit, Gesundheitsfaktoren, Hygiene, Drogenmissbrauch, psychische und physische Gesundheit, Gesundheitsdienste</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>imageryBaseMapsEarthCover</code>
+         <label>Basiskarten, Luftbilder</label>
+         <description>Basiskarten und -daten, z.B. Landbedeckung, topografische Karten, Luftbilder, Ortsnamen</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>intelligenceMilitary</code>
+         <label>Militär und Aufklärung</label>
+         <description>Militärbasen, militärische Einrichtungen und Aktivitäten, z.B. Kasernen, Truppenübungsplätze, militärisches Transportwesen, Nachrichtendienst</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>inlandWaters</code>
+         <label>Binnengewässer</label>
+         <description>Binnengewässerdaten, Gewässernetze und deren Eigenschaften, z.B. Flüsse und Gletscher, Salzseen, Wassernutzungspläne, Dämme, Strömungen, Hochwasser, Wasserqualität</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>location</code>
+         <label>Ortsangaben</label>
+         <description>Positionierungsangaben und -dienste, z.B. Adressen, Vermessungsnetze, Kontrollpunkte, Postleitzahlenbereiche, Ortsnamen, Gazetteer</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>oceans</code>
+         <label>Ozeane</label>
+         <description>Merkmale und Charakteristika von salzhaltigen Gewässern (ausser Binnengewässern), z.B. Gezeiten, Tidenwelle, Küsteninformationen, Riffe</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>planningCadastre</code>
+         <label>Planungsunterlagen, Kataster</label>
+         <description>Informationen für die Flächennutzungsplanung, z.B. Landnutzungspläne, Flächennutzungspläne, Katastervermessung, Liegenschaften, Bebauungspläne, Landschaftsprogramm</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>society</code>
+         <label>Gesellschaft</label>
+         <description>Kulturelle und gesellschaftliche Merkmale, z.B. Besiedlung, Anthropologie, Archäologie, Bildung, Religion, Sitten und Bräuche, demografische Daten, Erholungsgebiete und -aktivitäten, Sozialstudie, Verbrechen und Justiz, Zensusdaten</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>structure</code>
+         <label>Bauwerke</label>
+         <description>Anthropogene Bauten, z.B. Gebäude, Museen, Kirchen, Fabriken, Wohngebäude, Denkmäler, Geschäfte, Türme</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>transportation</code>
+         <label>Verkehrswesen</label>
+         <description>Mittel und Wege zur Beförderung von Personen und/oder Gütern, z.B. Strassen, Flughäfen/Landepisten, Schifffahrtswege, Tunnel, Seekarten, Positionen von Fahrzeugen, Luftfahrtskarten, Schienennetz</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <entry>
+         <code>utilitiesCommunication</code>
+         <label>Infrastrukturen</label>
+         <description>Energie-, Wasser- und Abfallsysteme, Kommunikationsinfrastruktur und -dienste, z.B. Wasserkraft, geothermische, solare und nukleare Energiequellen, Wasseraufbereitung- und verteilung, Abwassersammlung- und aufbereitung, Hochspannungs- und Gasleitungen, Datenkommunikation, Telekommunikation, Radio, Kommunikationsnetzwerke</description>
+      </entry>
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+   </codelist>
+   <!-- ==================================================== -->
+     <codelist name="gmd:MD_ClassificationCode">
+    <entry>
+      <code>unclassified</code>
+      <label>Unbeschränkt</label>
+      <description>Ohne Einschränkungen</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>restricted</code>
+      <label>Beschränkt</label>
+      <description>Nicht zur Veröffentlichung</description>
+
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>confidential</code>
+      <label>Vertraulich</label>
+      <description>Nur für Vertrauenspersonen</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>secret</code>
+      <label>Geheim</label>
+      <description>Nur für einen ausgewählten Personenkreis</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>topSecret</code>
+      <label>Streng geheim</label>
+      <description>Höchste Geheimhaltung</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </codelist>
+  <!-- ==================================================== -->
+  <codelist name="gmd:CI_PresentationFormCode">
+    <entry>
+      <code>documentDigital</code>
+      <label>Digitales Dokument</label>
+      <description>Digitales Dokument, vorwiegend als Text (evtl. mit Abbildungen)</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>imageDigital</code>
+      <label>Digitales Bild</label>
+      <description>Abbild eines natürlichen oder künstlichen Objekts oder einer Tätigkeit, welches
+        durch Sensorabtastung im sichtbaren oder einem anderen Bereich des elektromagnetischen
+        Spektrums (z.B. Infrarot, hochauflösendes Radar) erstellt und in digitaler Form gespeichert
+        wurde
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>documentHardcopy</code>
+      <label>Analoges Dokument</label>
+      <description>Analoges Dokument, primär Textdokumente (evtl. mit Bildern) auf Papier, Fotofilm
+        oder anderen Medien
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>imageHardcopy</code>
+      <label>Analoges Bild</label>
+
+      <description>Abbild eines natürlichen oder künstlichen Objekts oder einer Tätigkeit, welches
+        durch Sensorabtastung im sichtbaren oder einem anderen Bereich des elektromagnetischen
+        Spektrums (z.B. Infrarot, hochauflösendes Radar) erstellt und auf Papier, Fotofilm oder
+        einem anderen Medium reproduziert wurde
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>mapDigital</code>
+      <label>Digitale Karte</label>
+      <description>Digitale Karte in Raster- oder Vektorform</description>
+
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>mapHardcopy</code>
+      <label>Analoge Karte</label>
+      <description>Karte auf Papier, Fotofilm oder einem anderen Medium, welches dem direkten
+        Gebrauch durch einen menschlichen Nutzer dient
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>modelDigital</code>
+      <label>Digitales Modell</label>
+      <description>Mehrdimensionale, digitale Repräsentation eines Objekts, Prozesses etc.
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>modelHardcopy</code>
+      <label>Analoges Modell</label>
+      <description>Dreidimensionales, physisches Modell</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>profileDigital</code>
+      <label>Digitales Profil</label>
+      <description>Vertikales Profil in digitaler Form</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>profileHardcopy</code>
+      <label>Profilausdruck</label>
+      <description>Vertikales Profil auf Papier etc.</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>tableDigital</code>
+      <label>Digitale Tabelle</label>
+      <description>Digitale systematische Darstellung von Daten oder Zahlen vornehmlich in Spalten
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>tableHardcopy</code>
+      <label>Analoge Tabelle</label>
+      <description>Systematische Darstellung von Daten oder Zahlen vornehmlich in Spalten auf
+        Papier, Fotofilm oder einem anderen Medium
+      </description>
+
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>videoDigital</code>
+      <label>Digitales Video</label>
+      <description>Digitale Videoaufnahme</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>videoHardcopy</code>
+      <label>Analoges Video</label>
+      <description>Analoge Videoaufnahme auf Film/Band</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+  </codelist>
+   <!-- ==================================================== -->
+  <codelist name="gmd:CI_RoleCode" alias="roleCode">
+    <entry>
+      <code>resourceProvider</code>
+      <label>Anbieter</label>
+      <description>Anbieter der Ressource</description>
+
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>custodian</code>
+      <label>Verwalter</label>
+      <description>Person oder Stelle, welche die Zuständigkeit und Verantwortlichkeit für einen
+        Datensatz übernommen hat und seine sachgerechte Pflege und Wartung sichert
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>owner</code>
+      <label>Eigentümer / Datenherr</label>
+      <description>Eigentümer/Datenherr der Ressource</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>user</code>
+      <label>Nutzer</label>
+      <description>Nutzer der Ressource</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>distributor</code>
+      <label>Vertrieb</label>
+      <description>Person oder Stelle, die für den Vertrieb zuständig ist</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>originator</code>
+
+      <label>Urheber</label>
+      <description>Erzeuger der Ressource</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>pointOfContact</code>
+      <label>Ansprechpartner</label>
+      <description>Kontakt für Informationen zur Ressource oder deren Bezugsmöglichkeiten
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>principalInvestigator</code>
+      <label>Projektleitung</label>
+      <description>Person oder Stelle, die verantwortlich für die Erhebung der Daten, Untersuchung
+        ist
+      </description>
+
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>processor</code>
+      <label>Bearbeiter</label>
+      <description>Person oder Stelle, die die Resource in einem Arbeitsschritt verändert hat
+      </description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>publisher</code>
+      <label>Herausgeber</label>
+      <description>Person oder Stelle, welche die Ressource veröffentlicht</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>author</code>
+      <label>Autor</label>
+      <description>Verfasser der Ressource</description>
+    </entry>
+    <!-- ISO PROFIL CHE ONLY
+        <entry>
+            <code>editor</code>
+            <label>Editor</label>
+            <description>Verleger einer Publikation</description>
+        </entry>
+        <entry>
+            <code>partner</code>
+            <label>Partner</label>
+            <description>Beiteiligter bei der Erstellung der Ressource</description>
+        </entry> -->
+  </codelist>
+  <!-- ==================================================== -->
+   <codelist name="gmd:MD_MaintenanceFrequencyCode">
+    <entry>
+      <code>continual</code>
+      <label>Kontinuierlich</label>
+      <description>Daten werden ständig aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>daily</code>
+      <label>Täglich</label>
+      <description>Daten werden täglich aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>weekly</code>
+      <label>Wöchentlich</label>
+      <description>Daten werden wöchentlich aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>fortnightly</code>
+      <label>Zweiwöchentlich</label>
+      <description>Daten werden vierzehntägig aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>monthly</code>
+      <label>Monatlich</label>
+      <description>Daten werden monatlich aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>quarterly</code>
+      <label>Vierteljährlich</label>
+      <description>Daten werden vierteljährlich aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>biannually</code>
+      <label>Halbjährlich</label>
+      <description>Daten werden halbjährlich aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>annually</code>
+      <label>Jährlich</label>
+      <description>Daten werden jährlich aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>asNeeded</code>
+      <label>Bei Bedarf</label>
+      <description>Daten werden bei Bedarf aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>irregular</code>
+      <label>Unregelmässig</label>
+      <description>Daten werden unregelmässig aktualisiert</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>notPlanned</code>
+      <label>Nicht geplant</label>
+      <description>Eine Aktualisierung der Daten ist nicht geplant</description>
+    </entry>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <entry>
+      <code>unknown</code>
+      <label>Unbekannt</label>
+      <description>Ein Aktualisierungsintervall ist nicht bekannt</description>
+    </entry>
+    <!-- ISO PROFIL CHE ONLY
+        <entry>
+            <code>userDefined</code>
+            <label>Benutzerdefiniert</label>
+            <description>Benutzerdefiniertes Aktualisierungsintervall (spezifiziert im Feld: "Benutzerdefiniertes Intervall")</description>
+        </entry>
+        -->
+  </codelist>
+  <!-- ==================================================== -->
+   <!--=== CouplingType from ISO19119 ===-->
+  <codelist name="srv:SV_CouplingType">
+    <entry>
+      <code>tight</code>
+      <label>Eng</label>
+      <description>Enge Kopplung: Daten sind assoziiert</description>
+    </entry>
+    <entry>
+      <code>mixed</code>
+      <label>Gemischt</label>
+      <description>Gemischte Kopplung: Daten sind assoziiert, zusätzlich können externe Daten
+        verarbeitet werden
+      </description>
+    </entry>
+    <entry>
+      <code>loose</code>
+      <label>Lose</label>
+      <description>Lose Kopplung: Es sind keine Daten assoziiert</description>
+    </entry>
+  </codelist>

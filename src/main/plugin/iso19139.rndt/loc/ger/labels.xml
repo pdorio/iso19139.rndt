@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labels xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <element name="rndt_org_box">
+        <label>Organisation</label>
+        <description>Die Organisation, der diese Metadaten gehören.</description>
+        <help>Sobald Sie Ihre Organisation eingerichtet haben, können Sie sie nicht mehr bearbeiten.</help>
+    </element>
+
+    <element name="rndt_org_select">
+        <label>Organisation</label>
+        <description>Die Organisation, der diese Metadaten gehören.</description>
+        <help>Diese Informationen werden verwendet, um den iPA-Code mit den Metadaten zu verknüpfen.</help>
+    </element>
+
+	<element name="gmd:codeSpace" id="208.1">
+		<label>Referenzstelle</label>
+		<description>Name oder Kennung der Person oder Organisation, die für den Namensraum verantwortlich ist.</description>
+		<helper>
+			<option value="http://www.epsg-registry.org">EPSG</option>
+		</helper>
+	</element>
+
+	<element name="gmd:title">
+		<label>Titel</label>
+		<description>Bezeichnung, unter der die Ressource bekannt ist</description>
+		<condition>Pflichtfeld</condition>
+		<help>Freier Text. Vermeiden Sie Abkürzungen.</help>
+	</element>
+
+	<element name="RNDTcrs">
+		<label>Identifikator des Referenzsystems</label>
+
+		<description>Bei räumlichen Referenzsystemen wird die Angabe des EPSG-Codes
+      empfohlen (z.B. EPSG:4326
+      für WGS84)</description>
+
+		<helper>
+                    <option value="WGS84">WGS84</option>
+                    <option value="ETRS89">ETRS89</option>
+                    <option value="ETRS89/ETRS-LAEA">ETRS89/ETRS-LAEA</option>
+                    <option value="ETRS89/ETRS-LCC">ETRS89/ETRS-LCC</option>
+                    <option value="ETRS89/ETRS-TM32">ETRS89/ETRS-TM32</option>
+                    <option value="ETRS89/ETRS-TM33">ETRS89/ETRS-TM33</option>
+                    <option value="ETRS89/UTM-zone32N">ETRS89/UTM-zone32N</option>
+                    <option value="ETRS89/UTM-zone33N">ETRS89/UTM-zone33N</option>
+                    <option value="ROMA40/EST">ROMA40/EST</option>
+                    <option value="ROMA40/OVEST">ROMA40/OVEST</option>
+                    <option value="ED50/UTM 32N">ED50/UTM 32N</option>
+                    <option value="ED50/UTM 33N">ED50/UTM 33N</option>
+                    <option value="IGM95/UTM 32N">IGM95/UTM 32N</option>
+                    <option value="IGM95/UTM 33N">IGM95/UTM 33N</option>
+                    <option value="WGS84/UTM 32N">WGS84/UTM 32N</option>
+                    <option value="WGS84/UTM 33N">WGS84/UTM 33N</option>
+                    <option value="WGS84/UTM 34N">WGS84/UTM 34N</option>
+                    <option value="BESSEL/Cassini-Soldner">BESSEL/Cassini-Soldner</option>
+                    <option value="BESSEL/Sanson-Flamsteed">BESSEL/Sanson-Flamsteed</option>
+                    <option value="CATASTO / Locale">CATASTO / Locale</option>
+                    <option value="ROMA40">ROMA40</option>
+                    <option value="ROMA40/ROMA">ROMA40/ROMA</option>
+                    <option value="ED50">ED50</option>
+                    <option value="IGM95">IGM95</option>
+                    <option value="Rete Altimetrica Nazionale">Rete Altimetrica Nazionale</option>
+                    <option value="WGS84/3D">WGS84/3D</option>
+                    <option value="Livello medio delle basse maree sizigiali">Livello medio delle basse maree sizigiali</option>
+                    <option value="Livello medio delle alte maree sizigiali">Livello medio delle alte maree sizigiali</option>
+                    <option value="Livello medio lago">Livello medio lago</option>
+                    <option value="ITRS">ITRS</option>
+                    <option value="ITRFxx">ITRFxx</option>
+                    <option value="IGSxx">IGSxx</option>
+                    <option value="IGb00">IGb00</option>
+                    <option value="ETRF89">ETRF89</option>
+                    <option value="ETRF00">ETRF00</option>
+		</helper>
+	</element>
+
+	<element name="gmd:code" context="gmd:RS_Identifier">
+		<label>Code</label>
+		<description>Alphanumerischer Wert, der eine Instanz im Namensraum
+      identifiziert</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:issueIdentification">
+		<label>Kennung</label>
+		<description>Kennung eines Elements einer Serie</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:hierarchyLevel">
+    <label>Metadatensatzidentifikator</label>
+    <help>Empfehlung: Verwendung einer UUID</help>
+    <condition>Pflichtfeld</condition>
+    <description>Eindeutiger Identifikator für diesen Metadatensatz</description>
+	</element>
+	<element name="gmd:fileIdentifier">
+		<label>Metadatensatzschlüssel</label>
+		<description>Eindeutiger Identifikator für diesen Metadatensatz</description>
+		<condition>Pflichtfeld</condition>
+		<help>Der Schlüssel muss als Vorsilbe von der Form IPA Kode der Inhaberorganisation des Datensatzes oder Dienstes und dem Zeichen ":" darangehängt sein.  Der IPA Kode wird der Organisation zum Zeitpunkt der Akkreditierung, gemäß Komma 1 Artikel 19 Anhang A des DPCM 1. April 2008, zugewiesen.</help>
+	</element>
+	<element name="gmd:parentIdentifier">
+		 <label>Identifikator des übergeordneten Metadatensatzes</label>
+		<description>Eindeutiger Identifikator des übergeordneten Metadatensatzes (Elternobjekt), auf
+      den sich der aktuelle Metadatensatz (Kindobjekt) bezieht</description>
+		<condition>Pflichtfeld</condition>
+		<help>Empfehlung: Verwendung einer UUID Es ist möglich, Metadatensätze hierarchisch zu
+      strukturieren. So kann z.B. ein Metadatensatz die Merkmale einer ganzen Kartenserie
+      dokumentieren, während in den nachgeordneten Metadatensätzen nur noch die Merkmale des
+      jeweiligen Blattes erfasst werden. Bei jedem Einzelblatt ist dann hier der Identifikator des
+      übergeordneten Metadatensatzes anzugeben.</help>
+	</element>
+	<element name="gmd:URL">
+		<label>Website</label>
+		<description>Website</description>
+		<help>Wenn die Informationen zur Identifizierung eines Unternehmens, einer Niederlassung oder einer Person, die mit Daten oder einem Dienst in Verbindung steht, zur Verfügung gestellt werden, können sie alternativ zum "Telefon" eingegeben werden.</help>
+	</element>
+	<element name="gmd:date" context="gmd:CI_Citation">
+		<condition>Pflichtfeld</condition>
+		<label>Datum</label>
+		<description>A seconda del tipo di data specificato, può corrispondere a "Data di pubblicazione", "Data dell'ultima revisione" o "Data di creazione" (jjjj-mm-tt o jjjjmmtt).</description>
+		<description>Datum der Erzeugung, Veröffentlichung oder Überarbeitung der Ressource (jjjj-mm-tt oder jjjjmmtt).</description>
+		<_condition>M</_condition>
+	</element>
+	<element name="gmd:dateStamp">
+		<condition>Pflichtfeld</condition>
+		<label>Metadaten Datum</label>
+		<description>Datum, zu dem der Metadatensatz erzeugt/geändert wurde. (jjjj-mm-tt o jjjjmmtt).</description>
+		<_condition>M</_condition>
+	</element>
+	<element name="gmd:citedResponsibleParty">
+		<condition>Pflichtfeld</condition>
+		<label>Verantwortliche Stelle</label>
+		<description>Organizzazione titolare dei dati.</description>
+	</element>
+	<element name="gmd:organisationName">
+		<label>Nome dell'Ente</label>
+		<description>Hier ist beispielsweise der Autor einer Publikation anzugeben (im Gegensatz zu "pointOfContact").</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:voice">
+		<label>Telefonnummer</label>
+		<description>Telefonnummer der verantwortlichen Organisation oder Person</description>
+		<_condition>È necessario documentare obbligatoriamente almeno un elemento tra telefono e sito web.</_condition>
+		<help>können sie alternativ zum "Website" eingegeben werden.</help>
+	</element>
+	<element name="gmd:name" context="gmd:MD_Format">
+		<label>Bezeichnung</label>
+		<description>Bezeichnung des verwendeten Bezugssystems</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:numberOfDimensions">
+    <label>Anzahl der Dimensionen</label>
+    <help>Mit diesem Element wird die Anzahl der in einem Rasterdatensatz vorhandenen unabhängigen Achsen erfasst, sowohl für die räumliche als auch die zeitliche Dimension (x, y, z, t). Die Anzahl der vorhandenen Dimensionen wird als ganze Zahl angegeben (1, 2, 3, 4).
+    </help>
+    <condition>Pflichtfeld</condition>
+    <description>Anzahl der unabhängigen räumlich-zeitlichen Achsen</description>
+  </element>
+	<element name="gmd:cornerPoints">
+		<label>Eckpunkte</label>
+		<description>Bezug des Rasterkoordinatensystems zur Erde, der durch die vier Eckpunkt-Zellen des Rasters und die entsprechenden Koordinaten im räumlichen Bezugssystems definiert ist. Von den vier Eckpunkten des Rasters werden mindestens zwei diagonal gegenüberliegende Eckpunkte benötigt. Der erste Eckpunkt der anzugebenden Sequenz entspricht dem Ursprung des Rasters.</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="srv:couplingType">
+    <label>Art der Kopplung</label>
+    <description>Angabe ob die Daten eng, gemischt oder lose an den Dienst gekoppelt sind</description>
+  </element>
+	<element name="srv:serviceType"><!-- readonly="true" -->
+		<label>Art des Dienstes</label>
+		<description>Die Art des Dienstes kann aus der anghängten Liste ausgewählt werden. Z.B. OGC:WMS wenn es sich um einen WMS-Dienst handelt</description>
+		<helper>
+			<option value="OGC:WMS">OGC Web Map Service (OGC:WMS)</option>
+			<option value="OGC:WFS">OGC Web Feature Service (OGC:WFS)</option>
+			<option value="OGC:WCS">OGC Web Coverage Service (OGC:WCS)</option>
+			<option value="W3C:HTML:DOWNLOAD">Scaricamento (W3C:HTML:DOWNLOAD)</option>
+			<option value="W3C:HTML:LINK">Informazioni (W3C:HTML:LINK)</option>
+			<!-- INSPIRE Service type defined in MD IR / 1.3.1 Spatial data service
+				type <option value="discovery">Discovery Service (discovery)</option> <option
+				value="view">View Service (view)</option> <option value="download">Download
+				Service (download)</option> <option value="transformation">Transformation
+				Service (transformation)</option> <option value="other">Other Services (other)</option> -->
+			<option show="y" value="discovery">Servizio di ricerca (discovery)</option>
+			<option show="y" value="view">Servizio di consultazione (view)</option>
+			<option show="y" value="download">Servizio di scaricamento (download)</option>
+			<option show="y" value="transformation">Servizio di conversione (transformation)</option>
+			<option show="y" value="invoke">Servizio di richiesta dei servizi di dati territoriali (invoke)</option>
+			<option show="y" value="other">Altri servizi (other)</option>
+
+		</helper>
+	</element>
+	  <element name="srv:operatesOn">
+    <label>Bezieht sich auf</label>
+    <description>Hier werden Datensätze beschrieben/verlinkt, die mit diesem Dienst dargestellt bzw. verarbeitet werden.</description>
+  </element>
+	<element name="srv:DCP">
+		<label>DCP (Distributed Computing Platforms)</label>
+		<description>Lista dei valori DCPList</description>
+	</element>
+	<element name="srv:connectPoint">
+		    <label>DCP (Distributionsplattform)</label>
+    <description>Plattform worauf die Operation implementiert wurde. Auswahl aus Codeliste</description>
+	</element>
+  <element name="srv:invocationName">
+    <label>Aufruf-Bezeichnung</label>
+    <description>Bezeichnung für den Aufruf der Schnittstelle im Zusammenhang mit dem DCP. Der Name ist für alle DCPs identisch</description>
+  </element>
+	<element name="gmd:attributeDescription">
+		<label>Attributbeschreibung</label>
+    <description>Beschreibung des Attributs, welches durch den Zellwert ausgeprägt wird</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:bitsPerValue">
+		<label>Bittiefe</label>
+		<description>Maximale Anzahl von signifikanten Bits der unkomprimierten Werte</description>
+		<help>Bitauflösung der Grauwerte</help>
+	</element>
+	<element name="gmd:resourceMaintenance">
+		<label>Pflege der Ressource</label>
+		<description>Informationen zur Nachführung der Ressource.</description>
+	</element>
+	<element name="gmd:version" context="gmd:MD_Format">
+		<label>Version</label>
+		<description>Versionsbezeichnung des Namensraums</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:pointOfContact">
+		<label>Kontakt für die Ressource</label>
+		<description>Kontaktinformation zu Person(en) und Organisation(en), welche im Bezug zur Ressource stehen</description>
+		<condition>Pflichtfeld</condition>
+		<help>Der Name der Organisation muss angegeben werden, Rolle = Kontakt der Resource (CI_RoleCode), Mailadresse und zumindest eine Webseite (url) und Telefonnummer der Oranisation.</help>
+	</element>
+	<element name="gmd:contact" context="gmd:MD_Metadata">
+		<label>Verantwortliche Stelle</label>
+		<description>Verantwortliche Organisation für die Pflege des Datensatzes.</description>
+		<condition>Pflichtfeld</condition>
+		<help>Geben Sie den vollständigen Namen der für die Übermittlung von Metadaten zuständigen Stelle ein, wie in der IPA-Akkreditierung angegeben. Verwenden Sie keine Abkürzungen (z.B. fügen Sie "Region" und nicht "Reg." ein).</help>
+	</element>
+	<element name="gmd:language" context="gmd:MD_DataIdentification">
+		<label>Sprache</label>
+		<description>Die Daten sind in der Sprache angegeben</description>
+		<help>Die Daten sind in der Sprache angegeben</help>
+		<_condition>Pflichtfeld</_condition>
+	</element>
+	<!--element name="gmd:language" context="gmd:MD_Metadata">
+		<label>Lingua dei metadati</label>
+		<description>Linguaggio nel quale sono espressi i metadati</description>
+		<condition>Pflichtfeld</condition>
+	</element-->
+	<!--element name="gmd:language">
+		<label>Lingua della risorsa</label>
+		<description>Linguaggio utilizzato per i dati</description>
+		<help>Linguaggio utilizzato per i dati</help>
+		<condition>Pflichtfeld</condition>
+	</element-->
+	<element name="gmd:CI_Series">
+		<label>Serienangaben</label>
+		<description>Information über die Serie oder den Gesamtdatenbestand, wozu der Datenbestand gehört</description>
+		<help>Das Element ist nützlich, um die Beziehungen zwischen den Hierarchieebenen zu verwalten. Gibt es keine hierarchische Ebene höheren Ranges (Serie oder Datensatz "flach", d.h. die zu keiner Serie gehört), muss das Element den gleichen Wert annehmen wie das Element "Code".</help>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:abstract">
+		<label>Kurzbeschreibung</label>
+		<description>Kurze, beschreibende Zusammenfassung des Inhalts der Ressource</description>
+		<condition>Pflichtfeld</condition>
+		<help>Freier Text. Bitte geben Sie eine Beschreibung der Daten an, die Sie dokumentieren.</help>
+	</element>
+	<element name="gmd:descriptiveKeywords">
+		<label>Schlüsselwörter</label>
+		<description>Schlüsselwörter, ihr Typ und Quellenangabe</description>
+		<condition>Pflichtfeld</condition>
+		<help>Bitte geben Sie mindestens ein Schlüsselwort aus dem GEMET-Thesaurus an, das die relevante thematische Kategorie beschreibt, wie sie in den Anhängen der INSPIRE-Richtlinie definiert ist. Zusätzlich zu den oben genannten Keywords ist es möglich, jedes andere Keyword einzugeben, auch wenn es nicht aus einem Thesaurus stammt./help>
+	</element>
+	<element name="gmd:thesaurusName">
+		<label>Thesaurus</label>
+		<description>Verweis auf einen bestimmten Thesaurus mit den zu verwendenden Schlüsselwörtern</description>
+		<help>Mindestens ein Schlüsselwwort aus dem Thesaurus GEMET angeben, welches die Themankathegorie nach den INSPIRE Richtlinien beschreibt..</help>
+	</element>
+	<element name="gmd:citation" context="gmd:thesaurusName">
+		<label>Bibliografische Angaben</label>
+		<description>Angaben darüber, wie Bezug auf die beschriebene Ressource genommen werden soll</description>
+		<help>Ressourcen können z.B. Datensätze, digitale Karten, Messreihen, Services aber auch analoge Produkte sein. Anzugeben ist, wie die beschriebenen Ressourcen benannt und referenziert/zitiert werden sollen.</help>
+	</element>
+	<element name="gmd:equivalentScale" context="gmd:MD_Resolution">
+		<label>Vergleichsmassstab</label>
+		<description>Detailliertheitsgrad, angegeben durch den Massstab einer vergleichbaren gedruckten Karte</description>
+		<_condition>auszufüllen, wenn keine Distanz (Bodenauflösung) angegeben wird</_condition>
+		<help>Geben Sie die Maßstabszahl an.</help>
+	</element>
+	<element name="gmd:distance" context="gmd:MD_Resolution">
+		<label>Distanz</label>
+		<description>Bodenauflösung</description>
+		<condition>auszufüllen, wenn kein Vergleichsmassstab angegeben wird</condition>
+		<help>Geben Sie die geometrische Bodenauflösung, ausgedrückt als Zahlenwert und Maßeinheit, ein.</help>
+		 <helper>
+		  <option value="0.10">10 cm</option>
+		  <option value="0.25">25 cm</option>
+		  <option value="0.50">50 cm</option>
+		  <option value="1">1 m</option>
+		  <option value="30">30 m</option>
+		  <option value="100">100 m</option>
+    </helper>
+	</element>
+	<element name="gmd:supplementalInformation">
+		<label>Zusatzinformation</label>
+		<description>Ergänzende, den Datenbestand beschreibende Information</description>
+		<help>weitere, den Datensatz beschreibende Information, welche für die Benutzung, Bearbeitung etc. des Datenbestands von Interesse sind</help>
+	</element>
+	<element name="gmd:useLimitation">
+		<label>Einschränkungen der Datennutzung</label>
+		<description>EinschrÃkungen der Datennutzung</description>
+		<help>Descrizione dei termini e delle condizioni, inclusi anche, se applicabili, i costi corrispondenti dei dati. Citare esplicitamente le licenze d'uso adottate (standard o definite dall'Ente). È possibile anche inserire il link (URL) dove tali termini,condizioni e/o licenze sono descritti.</help>
+		<helper>
+			<option value="Nessuna condizione applicabile">Keine Bedingungen anwendbar</option>
+			<option value="Condizioni sconosciute">Unbekannte Bedingungen</option>
+      <option value="Recommended values">Empfohlene Werte</option>
+		</helper>
+	</element>
+	<element name="gmd:accessConstraints">
+		<label>Zugangsbeschränkungen</label>
+		<condition>Pflichtfeld</condition>
+		<description>Beschränkungen des Zugangs zu Daten, um den Schutz der Privatsphäre oder des geistigen Eigentums zu gewährleisten, und jede andere Einschränkung oder Beschränkung der Beschaffung der Ressource (der Zugang umfasst das Anzeigen, Drucken oder Vervielfältigen der Daten, schließt die Datenverarbeitung nicht ein). Die Daten können öffentlich oder bekannt sein oder von jedermann oder mit begrenztem Wissen.</description>
+		<help>Das Element muss einen der Werte der Liste "MD_RestrictionCode" annehmen (§ 3.4.3.12 - Anlage 2 DM). Wenn das Element den Wert "Andere Einschränkungen" annimmt, dann ist es notwendig, auch das Element "Andere Einschränkungen" zu dokumentieren (§ 2.1.1.1.4). Angesichts der Erweiterung der vom RNDT erstellten Codeliste um den Wert "public data" ist es notwendig, dass das Element den Wert "Andere Einschränkungen" (Andere Einschränkungen) annimmt und das Element "Andere Einschränkungen" (das ist Freitext) den Wert "öffentliche Daten" annimmt, wenn Sie diesen Wert unter Verwendung der XSD-ISO-Schemata verwenden wollen. Um die Einhaltung von INSPIRE zu gewährleisten, wenn der Wert des nächsten Elements "Einschränkungen der Benutzerfreundlichkeit" (§ 2.1.1.1.3) gleich "Andere Einschränkungen" ist, dann muss der Wert des aktuellen Elements "Zugangsbeschränkungen" auch den Wert "Andere Einschränkungen" annehmen, der im Element "Andere Einschränkungen" (§ 2.1.1.1.4), das Freitext ist, Informationen über die beiden Arten von Constraints enthält.</help>
+	</element>
+	<element name="gmd:useConstraints">
+		<label>Nutzungseinschränkungen</label>
+		<condition>Pflichtfeld</condition>
+		<description>Einschränkungen zum Schutz der Privatsphäre oder des geistigen Eigentums sowie andere besondere Einschränkungen oder Warnungen bezüglich der Nutzung der Ressource oder der Metadaten</description>
+		<help>Das Element muss einen der Werte der Liste "MD_RestrictionCode" annehmen (§ 3.4.3.12 - Anlage 2 zum DM). Wenn das Element den Wert "Andere Einschränkungen" annimmt, dann ist es notwendig, auch das Element "Andere Einschränkungen" zu dokumentieren (§ 2.1.1.1.4). Angesichts der Erweiterung der vom RNDT erstellten Codeliste um den Wert "öffentliche Daten" ist es notwendig, dass das Element den Wert "Andere Einschränkungen" (Andere Einschränkungen) annimmt und das Element "Andere Einschränkungen" (das ist Freitext) den Wert "public data" annimmt, wenn Sie diesen Wert unter Verwendung der XSD-ISO-Schemata verwenden wollen.</help>
+	</element>
+	<element name="gmd:otherConstraints">
+		<label>Andere Einschränkungen</label>
+		<help>Mit diesem Element können sonstige Einschränkungen erfasst werden, denen der Datenzugriff oder die Datennutzung unterliegt. Dieses Element muss nur dann belegt werden, wenn in den Auswahllisten der Elemente "Zugangsbeschränkungen" oder "Nutzungseinschränkungen" der Wert "Andere Einschränkungen" gewählt wurde.</help>
+    <condition>Muss ausgefüllt werden, wenn unter Zugriffseinschränkungen oder Nutzungseinschränkungen "Benutzerdefinierte Einschränkungen" ausgewält wurde</condition>
+    <description>Andere Einschränkungen und rechtliche Voraussetzungen für den Zugriff und die Verwendung der Ressource oder der Metadaten</description>
+	</element>
+	<element name="gmd:extent" context="gmd:MD_DataIdentification">
+		<label>Ausdehnung</label>
+		<description>Information über die horizontale, vertikale und zeitliche Ausdehnung der Daten dieses Geltungsbereichs</description>
+	</element>
+	<element name="gmd:EX_GeographicBoundingBox">
+		<label>Geografisches Begrenzungsrechteck</label>
+		<description>Geografische Lage des Datenbestands.</description>
+		<condition>Pflichtfeld</condition>
+		<help>Hinweis: Im Original wird auf den Verweis auf ein Bezugssystem explizit verzichtet, da nur eine ungefähre Lageangabe durch dieses Element angegeben werden soll. Abweichend hiervon wird die konsequente Nutzung von geografischen Koordinaten auf Basis des WGS84 empfohlen.</help>
+	</element>
+	<element name="gmd:verticalCRS">
+		<label>Vertikales Bezugssystem</label>
+		<description>Angabe des Höhenbezugssystems, in dem der tiefste und der höchste Punkt angegeben sind. Das Höhenbezugssystem beinhaltet die Angabe einer Masseinheit.</description>
+		<help>Für die Dokumentation dieses Elements verwenden Sie unter Bezugnahme auf die Werteliste "MD_ReferenceSystemCode" in § 3.4.3.11 der Anlage 2 zum DM das relative Tag mit der Zusammenstellung des einzigen Attributs "href", durch das die URI angegeben wird, zu der die Informationen des betrachteten Referenzsystems gelangen. Handelt es sich um ein in die EPSG-Datenbank eingefügtes Referenzsystem, so ist die zu berücksichtigende URI "http://www.epsgregistry. org/export.htm?gml=urn:ogc:def:crs:EPSG::xxxx", wobei "xxxx" der EPSG-Code des betreffenden Systems ist (siehe hierzu die Entsprechungstabelle in § 3.4.8.3 der Anlage 2 zum DM). Wird das Referenzsystem nicht in die EPSG-Datenbank eingefügt, so ist die zu berücksichtigende URI wie folgt: "http://www.rndt.gov.it/ReferenceSystemCode#codice_domini o" wobei 'domain_code' der Wert der gleichnamigen Spalte der Liste der zitierten Werte ist, die dem betrachteten System entspricht.</help>
+	</element>
+	<element name="gmd:metadataStandardName">
+		<label>Bezeichnung des Metadatenstandards</label>
+		<description>Bezeichnung des verwendeten Metadatenstandards (einschl. Profilname)</description>
+		<condition>Pflichtfeld</condition>
+		<help>Es wird auf den Ministerialerlass und die zugehörigen Anhänge verwiesen, die das Funktionieren des Verzeichnisses regeln. Der einzufügende Name ist “DM - Regole tecniche RNDT”.</help>
+	</element>
+	<element name="gmd:metadataStandardVersion">
+		<label>Version des Metadatenstandards</label>
+		<description>Version des verwendeten Metadatenstandards bzw. des genutzten Profils</description>
+		<condition>Pflichtfeld</condition>
+		<help>Es wird auf den Ministerialerlass und die zugehörigen Anhänge verwiesen, die das Funktionieren des Verzeichnisses regeln. Die anzugebende Version ist “10 novembre 2011”.</help>
+	</element>
+	<element name="gmd:dateType">
+		<label>Datumstyp</label>
+		<description>Information zur Online-Ressource</description>
+		<condition>Pflichtfeld</condition>
+		<help>z.B. Informationen über den Online-Zugriff auf einen Datensatz, eine Homepage, eine Spezifikation, Anwenderprofile, Anwendungen oder erweiterte Metadatenelemente</help>
+	</element>
+	<element name="gmd:EX_TemporalExtent">
+		    <label>Zeitliche Ausdehnung</label>
+    <help/>
+    <condition/>
+    <description>Zeitspanne, die die Ressource abdeckt</description>
+	</element>
+	<element name="gml:beginPosition">
+		<label>Anfangszeitpunkt</label>
+    <description>Formatiert als 2007-09-12T15:00:00 (YYYY-MM-DDTHH:mm:ss)</description>
+	</element>
+	<element name="gml:endPosition">
+		<label>Endzeitpunkt</label>
+    <description>Formatiert als 2007-09-12T15:00:00 (YYYY-MM-DDTHH:mm:ss)</description>
+	</element>
+	<element name="gml:TimePeriod">
+		<label>Zeitperiode</label>
+		<description />
+		<help>Das obligatorische Attribut 'gml:id' muss innerhalb derselben XML-Datei eindeutig sein. Um dies zu gewährleisten, kann diese ID das Format einer UUID haben.</help>
+	</element>
+	<element name="gmd:level">
+		<label>Qualitätsniveau</label>
+		<description>Ebene, auf der Qualitätsinformationen angewendet werden</description>
+		<condition>Pflichtfeld</condition>
+		<help>Sie muss einen der Werte der Liste "MD_ScopeCode" annehmen (§ 3.4.3.13 - Anlage 2 zum DM).</help>
+	</element>
+	<element name="gmd:report">
+		<label>Qualitätsbericht</label>
+		<description>Quantitative Qualitätsinformation über die Daten, bezogen auf den genannten Geltungsbereich</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:DQ_QuantitativeResult">
+		<label>Quantitatives Ergebnis</label>
+		<description>Werte oder Informationen zu Werten einer Datenqualitätsmessung</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:DQ_AbsoluteExternalPositionalAccuracy">
+		<label>Absolute Positionsgenauigkeit</label>
+		<description>Informationen zur Beschreibung der Positioniergenauigkeit der Daten</description>
+		<help>Es sind Angaben zu den Elementen "Maßeinheit" (obligatorische Verwendung des Zählers) und "Wert" zu machen. Um das Element "Maßeinheit" zu dokumentieren, ist es notwendig, die Attribute 'gml:id', 'codeSpace' und 'xlink:href' zu erweitern, über die das System referenziert und die verwendete Einheit bereitgestellt wird. Um das Element "value" zu dokumentieren, verwenden Sie den Typ gco:Real.</help>
+	</element>
+	<element name="gmd:lineage">
+		<label>Herkunft</label>
+		<description>Nicht-quantitative Qualitätsinformation über die Herkunft der Daten bezogen auf den genannten Geltungsbereich</description>
+		<condition>Pflichtfeld</condition>
+		Freier Text. Beschreiben Sie die Quelle und den Produktionsprozess der Daten und informieren Sie sich über die Historie und den Lebenszyklus, von der Erfassung und Erfassung bis zur aktuellen Form. Das Element kann alle Qualitätsinformationen enthalten, die zur Gewährleistung der Interoperabilität und Datenauswertung erforderlich sind, sowie gegebenenfalls eine Erklärung, aus der hervorgeht, ob der Datensatz validiert wurde oder einer Qualitätskontrolle unterliegt, ob es sich um die offizielle Version handelt (wenn es mehrere Versionen gibt) und ob er rechtsgültig ist.
+	</element>
+	<element name="gmd:statement" id="83.0">
+		<label>Erläuterung</label>
+		<description>Allgemeine Aussagen des Datenerzeugers zur Herkunft des Datenbestands</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:specification">
+		<label>Spezifikation</label>
+		<description>Bezeichnung einer Teil-, Profil- oder Produktspezifkation  des Formats</description>
+		<help>Dieses Element muss die Übereinstimmung mit den in Artikel 7 Absatz 1 der INSPIRE-Richtlinie genannten Durchführungsbestimmungen zum Ausdruck bringen. Die Verordnung (EU) Nr. 1089/2010 über die Interoperabilität von Daten und Diensten (Titel = VERORDNUNG (EU) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates im Hinblick auf die Interoperabilität von Geodatensätzen und -diensten, Datum (yyyyy-mm-dd oder yyyyymm-dd) = 2010-12-08, Typ Datum = Veröffentlichung) ist daher zu nennen. Es ist jedoch möglich, die Konformität der Ressource mit anderen Spezifikationen anzugeben.</help>
+	</element>
+	<element name="gmd:DQ_ConformanceResult" id="129.0">
+		<label>Erklärung</label>
+		<description>Erklärung der Bedeutung der Konformität für das Ergebnis</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:specification" id="130.0" context="gmd:DQ_ConformanceResult">
+		<label>Verfahrensspezifikation</label>
+		<description>Bibliografische Angaben zur Produktspezifikation oder zur Benutzeranforderung, anhand derer die Daten bewertet werden</description>
+		<help>Dieses Element muss die Übereinstimmung mit den in Artikel 7 Absatz 1 der INSPIRE-Richtlinie genannten Durchführungsbestimmungen zum Ausdruck bringen. Die Verordnung (EU) Nr. 1089/2010 über die Interoperabilität von Daten und Diensten (Titel = VERORDNUNG (EU) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates im Hinblick auf die Interoperabilität von Geodatensätzen und -diensten, Datum (yyyyy-mm-dd oder yyyyymm-dd) = 2010-12-08, Typ Datum = Veröffentlichung) ist daher zu nennen. Es ist jedoch möglich, die Konformität der Ressource mit anderen Spezifikationen anzugeben.</help>
+	</element>
+	<element name="gmd:specification" context="gmd:MD_Format">
+		<label>Spezifikation</label>
+		<description>Bezeichnung einer Teil-, Profil- oder Produktspezifkation des Formats</description>
+	</element>
+	<element name="gmd:pass">
+		<label>Bestanden</label>
+		<description>Angabe des Konformitätsergebnisses mit 0 = nein und 1 =  ja</description>
+		<condition>Pflichtfeld</condition>
+		<help>Für die Zusammenstellung des Eintrags selbst gelten die im Dictionary in § 3.4.2 des Anhangs 2 zur DM angegebenen Angaben (1 = konform, 0 = nicht konform und wenn kein Konformitätsgrad ausgedrückt wird, wird der Grad gleich dem Wert "nicht bewertet" berücksichtigt). Das bedeutet, dass in diesem Fall die XML-Datei das relative Tag enthalten muss, auch wenn es nicht bewertet wird.</help>
+	</element>
+	<element name="gmd:referenceSystemInfo" id="13.0">
+		<label>Referenzsystem</label>
+		<description>Beschreibung des Bezugssystems der raumbezogenen Daten.</description>
+	</element>
+	<element name="gmd:topicCategory" id="41.0">
+		<!--label>Tema</label-->
+		<label>Thematik</label>
+		<description>Thematische Klassifizierungen zur Gruppierung von geografischen Datensätzen und für die Suche nach vorhandenen Datensätzen.</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:MD_TopicCategoryCode">
+		<!--label>Categoria tematica</label-->
+		<label>Thematik</label>
+		<description>Thematische Klassifizierungen zur Gruppierung von geografischen Datensätzen und für die Suche nach vorhandenen Datensätzen.</description>
+		<condition>Pflichtfeld</condition>
+		<help>Das Element muss einen der Werte der Liste "MD_TopicCategoryCode" annehmen (§ 3.4.3.15 - al. 2 DM).</help>
+	</element>
+	<element name="gmd:classification" id="74.0">
+		<condition>Pflichtfeld</condition>
+		<label>Sicherheitseinstufung</label>
+		<description>Sicherheitseinstufung beim Umgang mit der Ressource oder den Metadaten</description>
+	</element>
+	<element name="gmd:identifier" context="gmd:CI_Citation">
+		<label>Identifikator</label>
+		<description>Eindeutige Referenz, die die Ressource in der angegebenen Hierarchieebene identifiziert.</description>
+		<condition>Pflichtfeld</condition>
+		<help>Der Kennung ist der IPA-Code voranzustellen, der der Verwaltung zum Zeitpunkt der Akkreditierung gemäß Artikel 19 Absatz 1 des Anhangs A des Dekrets des Premierministers vom 1. April 2008 zugewiesen wurde, gefolgt von den beiden Punkten (:).</help>
+	</element>
+	<element name="gmd:referenceSystemIdentifier">
+		<label>Identifikator des Referenzsystems</label>
+		<description>Identifikator des Referenzsystems</description>
+		<condition>Pflichtfeld</condition>
+		<help>Für die Dokumentation dieses Elements ist das Tag'gmd:code' mit dem Namen des Referenzsystems in der Spalte'Name' der Liste'MD_ReferenceSystemCode' in § 3.4.3.11 der Anlage 2 zum DM zu bewerten. Alternativ kann das Tag "gmd:code" um den entsprechenden EPSG-Code erweitert werden (siehe dazu die Entsprechungstabelle in § 3.4.8.3 der Anlage 2 zum DPCM), indem in diesem Fall auch das Tag "gmd:codeSpace" eingefügt wird, durch das die URL des EPSG-Registers "http://www.epsg-registry.org" angegeben wird.</help>
+	</element>
+	<element name="gmd:distributor">
+		<label>Vertriebsstelle</label>
+		<description>Information über die Vertriebsstelle</description>
+		<condition>Pflichtfeld</condition>
+		<help>Es ist zwingend erforderlich, den Namen des Unternehmens, die Rolle = Vertriebspartner (CI_RoleCode), die E-Mail-Adresse und mindestens eine zwischen der Website (URL) und der Telefonnummer des Unternehmens anzugeben. </help>
+	</element>
+	<element name="gmd:characterSet" context="gmd:MD_Metadata">
+		<label>Zeichensatz</label>
+		<description>Name des Zeichensatzstandards, der für Metadaten verwendet wird.</description>
+		<_condition>condizionato / deve essere documentato se ISO/IEC 10646-1 non è utilizzato e non è definito dall’encoding</_condition>
+		<help>Das Element muss einen der Werte der Liste "MD_CharacterSetCode" annehmen (§ 3.4.3.5 - al. 2 DM). Empfehlung: Verwendung von UTF8 </help>
+	</element>
+	<element name="gmd:characterSet" id="40.0" context="gmd:MD_DataIdentification">
+		<label>Zeichensatz</label>
+		<description>Name des Zeichensatzstandards, der für Metadaten verwendet wird.</description>
+		<_condition>condizionato / deve essere documentato se ISO/IEC 10646-1 non è utilizzato e non è definito dall’encoding</_condition>
+		<help>Das Element muss einen der Werte der Liste "MD_CharacterSetCode" annehmen (§ 3.4.3.5 - al. 2 DM). Empfehlung: Verwendung von UTF8 </help>
+	</element>
+	<element name="gmd:spatialRepresentationInfo" id="12.0">
+		<label>Struktur der räumlichen Daten</label>
+		<description>Verfahren zur räumlichen Darstellung von Daten</description>
+		<condition>Pflichtfeld</condition>
+		<help>Das Element muss einen der Werte der Liste "CI_SpatialRepresentationTypeCode" annehmen (§ 3.4.3.14 - al. 2 DM).</help>
+	</element>
+	<element name="gmd:transferOptions" id="273.0">
+		<label>Transferoptionen</label>
+		<description>Information über technische Mittel und Medien zum Bezug der Ressource</description>
+		<help>Daten: Geben Sie die als URL ausgedrückte Adresse ein, unter der Sie die dokumentierten Daten erhalten und/oder auf die entsprechenden Dienste zugreifen können. Wenn kein direkter Link zu der Ressource verfügbar ist, stellen Sie einen Link zu einem Ansprechpartner zur Verfügung, wo Sie weitere Informationen über die Ressource selbst finden können.
+		Dienste: zu dokumentieren, wenn ein Link zum Dienst verfügbar ist. Das Element kann auf eine der folgenden Arten angegeben werden: ein Link zu einem Dokument der "capabilties" des Dienstes; ein Link zu einem WSDL-Dokument des Dienstes (SOAP-binding); ein Link zu einer Webseite mit weiteren Informationen; ein Link zu einer Client-Anwendung mit direktem Zugriff auf den Dienst.</help>
+	</element>
+	<element name="gmd:role" id="379.0">
+		<label>Funktion</label>
+		<description>Funktion bzw. Rolle, die die verantwortliche Stelle in Bezug auf die Ressource einnimmt</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gmd:MD_DigitalTransferOptions" id="274.0">
+		<label>Digitale Transferoptionen</label>
+		<description>Technische Mittel und Medien zum Bezug der Ressource</description>
+		<help>Daten: Geben Sie die als URL ausgedrückte Adresse ein, unter der Sie die dokumentierten Daten erhalten und/oder auf die entsprechenden Dienste zugreifen können. Wenn kein direkter Link zu der Ressource verfügbar ist, stellen Sie einen Link zu einem Ansprechpartner zur Verfügung, wo Sie weitere Informationen über die Ressource selbst finden können.
+		Dienste: zu dokumentieren, wenn ein Link zum Dienst verfügbar ist. Das Element kann auf eine der folgenden Arten angegeben werden: ein Link zu einem Dokument der "capabilties" des Dienstes; ein Link zu einem WSDL-Dokument des Dienstes (SOAP-binding); ein Link zu einer Webseite mit weiteren Informationen; ein Link zu einer Client-Anwendung mit direktem Zugriff auf den Dienst.</help>
+	</element>
+	<element name="gmd:CI_Date" id="393.0">
+		<label>Datum</label>
+		<description>Datum der Erzeugung, Veröffentlichung oder Überarbeitung der Ressource (jjjj-mm-tt o jjjjmmtt)</description>
+		<_condition>Die Verbindlichkeit dieses Feldes hängt von der Kontaktperson ab.</_condition>
+	</element>
+	<element name="gmd:RS_Identifier" id="208.0">
+		<description>Identifikator des Bezugssystems</description>
+		<label>Identifikator des Bezugssystems</label>
+	</element>
+	<element name="gmd:positionName">
+		<label>Rolle des Verantwortlichen</label>
+		<description>Position oder Funktion der verantwortlichen Person</description>
+		<condition>Pflichtfeld</condition>
+	</element>
+	<element name="gco:Real">
+		<label>Zahlenwert</label>
+		<description>Menge, ausgedrückt als reeller Zahlenwert</description>
+	</element>
+	<element name="gml:BaseUnit">
+		<label>Grundlegende Maßeinheit</label>
+		<description>Maßeinheiten, die nicht von anderen elementaren Maßeinheiten innerhalb eines gegebenen Messsystems abgeleitet werden können.</description>
+	</element>
+	<element name="gml:remarks">
+		<label>Kommentare</label>
+		<description>Kommentare oder Informationen zum Objekt (in Textform oder mit Bezug auf eine externe Ressource)</description>
+	</element>
+	<element name="gml:quantityType">
+		<label>Art der Maßnahme</label>
+		<description>Phänomen oder physikalische Eigenschaft, die gemessen oder beobachtet wird.</description>
+	</element>
+	<element name="gml:quantityTypeReference">
+		<label>Art der Messung (Referenz)</label>
+		<description>Externe Ressource, die das Phänomen oder die physikalische Eigenschaft beschreibt, die gemessen oder beobachtet wird.</description>
+	</element>
+	<element name="gml:catalogSymbol">
+		<label>Symbol</label>
+		<description>Symbol, das zu einem bestimmten Katalog gehört und die Maßeinheit bezeichnet.</description>
+	</element>
+	<element name="xlink:role">
+		<label>XLink-Funktion (role)</label>
+		<description>Qualifizierter Name zur Beschreibung der Funktion des XLink-Inhalts</description>
+	</element>
+	<element name="xlink:arcrole">
+		<label>Bogenrolle XLink</label>
+		<description>Bogenrolle XLink</description>
+	</element>
+	<element name="xlink:title">
+		<label>XLink Titel</label>
+		<description>XLink menschenlesbare Beschreibung</description>
+	</element>
+	<element name="xlink:show">
+		<label>XLink-Display (show)</label>
+		<description>Gibt an, wie der dem XLink entsprechende Inhalt angezeigt werden soll (z.B. : neues Fenster).</description>
+	</element>
+	<element name="xlink:actuate">
+		<label>XLink-Laufwerk (actuate)</label>
+		<description>Geben Sie an, wann der Inhalt angezeigt werden soll, der dem XLink entspricht (z.B.: beim Laden des Dokuments).</description>
+	</element>
+	<element name="gml:unitsSystem">
+		<label>System von Maßeinheiten</label>
+		<description>Referenz oder Beschreibung des Systems der verwendeten Einheiten</description>
+	</element>
+	<element name="gmd:contact" context="gmd:MD_MaintenanceInformation">
+		<label>Kontakte</label>
+		<description>Identifizierung und Kommunikationsmittel mit Personen und Körperschaften, die für die Pflege von Metadaten verantwortlich sind.</description>
+	</element>
+	<element name="gmd:verticalElement">
+		<label>Vertikales Element</label>
+		<description>Vertikale Komponenten der Datenerweiterung</description>
+  </element>
+</labels>

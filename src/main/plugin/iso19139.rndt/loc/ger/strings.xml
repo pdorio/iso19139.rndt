@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+   <understandResource>Dataset-Info</understandResource>
+   <relatedResources>Verwandte Dienstleistungen und zugehörige Daten</relatedResources>
+   <techInfo>Tech. Informationen</techInfo>
+   <contactInfo>Kontaktdaten</contactInfo>
+   <mdContactInfo>Kontakte für Metadaten</mdContactInfo>
+   <refDate>Bezugsdatum</refDate>
+   <temporalRef>Zeitinformationen</temporalRef>
+   <constraintInfo>Informationen zu Zugriffsbeschränkungen</constraintInfo>
+   <xml_iso19139>Speichern Sie diese Metadaten als ISO19139 XML-Datei.</xml_iso19139>
+   <xml_iso19139Tooai_dc>Speichern dieser Metadaten als XML-Datei OAI Dublin Core</xml_iso19139Tooai_dc>
+   <rules name="schematron-rules-rndt">RNDT Regeln</rules>
+   <rndt2rndt>Metadaten im RNDT-Format exportieren</rndt2rndt>
+   <rndt2iso19139>Metadaten in das XML-Dateiformat ISO19139 exportieren</rndt2iso19139>
+   <rndt2dc>Metadaten in das Dublin Core Dateiformat exportieren</rndt2dc>
+   <rndtTab>RNDT-Ansicht</rndtTab>
+   
+   <!--rndtTabDesc>Description</rndtTabDesc>
+    <rndtTabTech>Technical info.</rndtTabTech>
+    <rndtTabQua>Quality</rndtTabQua>
+    <rndtTabAcc>Access constraints</rndtTabAcc>
+    <rndtTabMd>Metadata</rndtTabMd-->
+	
+   <rndt>
+      <org>
+         <title>Stelle öffentliche Verwaltung</title>
+         <field>Stelle</field>
+         <askselect>Stelle auswählen</askselect>
+      </org>
+   </rndt>
+   <identification>
+      <title>Identifikation</title>
+   </identification>
+   <keywords>
+      <title>Schlüsselwörter &amp; INSPIRE Themes</title>
+   </keywords>
+   <service>
+      <title>Identifizierung von Dienstleistungen</title>
+   </service>
+   <constraint>
+      <title>Zugangs- und Nutzungsbeschränkungen</title>
+   </constraint>
+   <geoloc>
+      <title>Geographische Lokalisierung</title>
+      <suggestionsLabel>Tipps und Tricks</suggestionsLabel>
+      <verticalCRSValues>
+         <default />
+         <crs id="wgs84">
+            <label>EPSG:4979</label>
+            <value>EPSG::4979</value>
+         </crs>
+         <crs id="wgs84h">
+            <label>EPSG:4326</label>
+            <value>EPSG::4326</value>
+         </crs>
+      </verticalCRSValues>
+   </geoloc>
+   <verticalExtent>
+      <title>Vertikale Erweiterung</title>
+   </verticalExtent>
+   <quality>
+      <title>Qualität und Gültigkeit</title>
+   </quality>
+   <conformity>
+      <title>Einhaltung</title>
+   </conformity>
+   <distribution>
+      <title>Datenverteilung</title>
+   </distribution>
+   <metadata>
+      <title>Metadaten</title>
+   </metadata>
+   <rasterContent>
+      <title>Inhalt der Rasterdaten</title>
+   </rasterContent>
+   <rasterSpatialRepresentation>
+      <title>Räumliche Darstellung von Rasterdaten</title>
+   </rasterSpatialRepresentation>
+   <positionalAccuracy>
+      <title>Positioniergenauigkeit</title>
+   </positionalAccuracy>
+   
+   <!-- New strings added for the AngularJS editor -->
+   <!-- View and tabs -->
+   
+   <advanced>Vollständig</advanced>
+   <default>Standardmäßig</default>
+   <simple>Einfacher</simple>
+   <inspire>Schlüsselwörter &amp; INSPIRE Themes</inspire>
+   <resource>Ressource</resource>
+   <xml>XML</xml>
+   <overviews>Übersicht</overviews>
+   <metadataInXML>XML</metadataInXML>
+   <providedBy>Angetrieben von</providedBy>
+   <shareOnSocialSite>Teilen auf Social Media</shareOnSocialSite>
+   <viewMode>Ansichten</viewMode>
+   <metadata>Metadaten</metadata>
+   <identificationInfo>Identifikation</identificationInfo>
+   <distributionInfo>Distribution</distributionInfo>
+   <dataQualityInfo>Qualität</dataQualityInfo>
+   <spatialRepresentationInfo>Raumdarstellung</spatialRepresentationInfo>
+   <referenceSystemInfo>Bezugssystem</referenceSystemInfo>
+   <contentInfo>Inhalt</contentInfo>
+   <portrayalCatalogueInfo>Portrayal</portrayalCatalogueInfo>
+   <metadataConstraints>MD-Beschränkungen</metadataConstraints>
+   <metadataMaintenance>MD-Wartung</metadataMaintenance>
+   <applicationSchemaInfo>Informationen über die Regelung</applicationSchemaInfo>
+   <noThesaurusName>Schlüsselwörter</noThesaurusName>
+   <bboxesSection>Geographische Abdeckung</bboxesSection>
+   <!-- XSD error translation -->
+   <invalidElement>Ungültiges Element. Ungültiger Inhalt wurde gefunden, beginnend mit dem Element:</invalidElement>
+   <onElementOf>Eines der folgenden Elemente</onElementOf>
+   <isExpected>ist erwartet.</isExpected>
+   <isNotComplete>ist nicht vollständig.</isNotComplete>
+   <elementLocated>Das übergeordnete Element ist</elementLocated>
+   <missingElement>Fehlende Elemente. Der Inhalt des Elements:</missingElement>
+   <invalidValue>Ungültiger oder fehlender Wert.</invalidValue>
+   <notValidFor>ist kein gültiger Wert für</notValidFor>
+   <xsdErrorIs>XSD-Fehler ist:</xsdErrorIs>
+   <inElement>im Element</inElement>
+   <enum1>Wert</enum1>
+   <enum2>ist für das Feld nicht gültig</enum2>
+   <enum3>Die Liste der Werte ist :</enum3>
+   
+   <!-- INSPIRE view labels and help -->
+   
+   <url>Website</url>
+   <resourceConstraints>Ressourcenbeschränkungen</resourceConstraints>
+   <identifier>Resource identifier</identifier>
+   <rsIdentifier>Projection</rsIdentifier>
+   <referenceDate>Zeitliche Informationen</referenceDate>
+   <creationDate>Erstellungsdatum</creationDate>
+   <hierarchyLevel>Hierarchieebene</hierarchyLevel>
+   <publicationDate>Veröffentlichungsdatum</publicationDate>
+   <revisionDate>Überarbeitungsdatum</revisionDate>
+   <temporalRangeSection>Zeitlicher Umfang</temporalRangeSection>
+   <beginPosition>Beginnen</beginPosition>
+   <endPosition>Ende</endPosition>
+   <conformity>Konformität</conformity>
+   <conformity_title>Titel</conformity_title>
+   <conformity_date>Datum</conformity_date>
+   <explanation>Erläuterung</explanation>
+   <pass>Pass</pass>
+   <indeterminatePosition>Unbestimmte Position</indeterminatePosition>
+   <pointOfContact>Kontakt für die Ressource</pointOfContact>
+   <metadataPointOfContact>Kontakt für die Metadaten</metadataPointOfContact>
+   <organisationName>Name der Stelle</organisationName>
+   <electronicMailAddress>Email</electronicMailAddress>
+   <role>Position</role>
+   <phone>Telefon</phone>
+   <encoding>Kodierung</encoding>
+   <inspireTheme>INSPIRE Thema</inspireTheme>
+   <inspireThemeURI>INSPIRE Thema</inspireThemeURI>
+   <extent>Erweiterung des zeitlichen Raumes</extent>
+   <referenceSystemIdentifier>Referenzsystem</referenceSystemIdentifier>
+   <format>Format</format>
+   <format_version>Version</format_version>
+   <format_specification>Formatangabe</format_specification>
+   <lineage>Abstammung</lineage>
+   <spatialResolution>Räumliche Auflösung (Maßstab)</spatialResolution>
+   <spatialDistance>Räumliche Auflösung (Entfernung)</spatialDistance>
+   <accessConstraints>Zugriffsbeschränkungen</accessConstraints>
+   <useLimitation>Nutzungsbeschränkung</useLimitation>
+   <notEvaluated>Nicht bewertet</notEvaluated>
+   <uomRecord>Position accuracy of the data</uomRecord>
+   <addDate>Datum hinzufügen</addDate>
+   <addPointOfContact>Ansprechpartner hinzufügen</addPointOfContact>
+   <addTopic>Thema hinzufügen</addTopic>
+   <addTransferOption>Ressource hinzufügen</addTransferOption>
+   <add-resource-id>Ressourcenkennung berechnen</add-resource-id>
+   <add-resource-idHelp>Stellen Sie den Ressourcenbezeichner aus der Katalog-URL und dem Metadatenbezeichner zusammen.  (z.B. http://www.organization.org/catalogue/5391bf69-44bc-4ea0-8cc0-6cf6c3bc81ae).</add-resource-idHelp>
+   <add-extent-from-geokeywords>Berechnung des Extents aus dem Schlüsselwort</add-extent-from-geokeywords>
+   <add-extent-from-geokeywordsHelp>Analysieren Sie jedes Keyword vom Typ Ort und fügen Sie passende Extents hinzu.</add-extent-from-geokeywordsHelp>
+</strings>

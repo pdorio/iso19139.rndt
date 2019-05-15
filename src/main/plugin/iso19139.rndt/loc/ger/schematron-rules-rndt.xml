@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<!--FILE IDENTIFIER-->
+	<M1>Dateninformationen - Dateikennung</M1>
+	<alert.M1><div>Das Element fileIdentifier fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M1>
+	<!--METADATA LANGUAGE-->
+	<M2>Dateninformationen - Metadatensprache</M2>
+	<alert.M2><div>Das Element "language" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M2>
+	<!--PARENT IDENTIFIER-->
+	<M3>Dateninformationen - Vorherige Datei-ID</M3>
+	<alert.M3><div>Das Element "parentIdentifier" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M3>
+	<!--HIERARCHY LEVEL-->
+	<M4>Dateninformationen - Hierarchieebene</M4>
+	<alert.M4><div>Das Element "hierarchyLevel" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M4>
+	<!--METADATA STANDARD NAME-->
+	<M5>Dateninformationen - Name der Norm</M5>
+	<alert.M5><div>Das Element "metadataStandardName" fehlt, ist unvollständig oder hat einen falschen Wert. Der Wert des Elements muss gleich 'DM - Regole tecniche RNDT' sein.</div></alert.M5>
+	<!--METADATA STANDARD NAME-->
+	<M6>Dateninformationen - Standardausführung</M6>
+	<alert.M6><div>Das Element "metadataStandardVersion" fehlt, ist unvollständig oder hat einen falschen Wert. Der Wert des Elements muss '10 novembre 2011' sein.</div></alert.M6>
+	<!--METADATA CHARACTER SET-->
+	<M7>Dateninformationen - Metadaten-Zeichensätze</M7>
+	<alert.M7><div>Das Element "characterSet" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M7>
+	<!--DATA/SERVICE IDENTIFICATION - DATE TYPE-->
+	<M8>Daten/Dienstleistungen Identifikation - Datumstyp</M8>
+	<alert.M8><div>Das Element "dateType" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M8>
+
+    <!--DATA/SERVICE IDENTIFICATION -  RESPONSIBLE PARTY-->
+	<M9>Identifizierung von Daten/Diensten - Metadaten-Manager</M9>
+
+	<alert.req8><div>Folgende Angaben müssen gemacht werden: Name der Stelle, Position, E-Mail-Adresse, Website und/oder Telefonnummer.</div></alert.req8>
+	<alert.req9><div>Der CI_RoleCode Codelistenwert für die Rolle muss "point of contact" (pointOfContact) sein.</div></alert.req9>
+
+	<!--DATA/SERVICE IDENTIFICATION - IDENTIFIER-->
+	<M13>Daten/Dienstleistungen Identifikation - Identifikator</M13>
+	<alert.M13><div>Das Element "RS_Identifier/MD_Identifier" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M13>
+	<!--DATA/SERVICE IDENTIFICATION - SERIES-->
+	<M14>Daten/Dienstleistungen Identifikation - Id obere Ebene</M14>
+	<alert.M14><div>Das Element "series" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M14>
+	<!--DATA/SERVICE IDENTIFICATION - DATASET RESPONSIBLE PARTY -->	
+	<M15>Daten/Dienstleistungen Identifikation - Verantwortlich für die Daten/Dienstleistung</M15>
+	<!--<alert.M15><div>Das Element "citedResponsibleParty" fehlt, ist unvollständig oder hat einen falschen Wert.. Die Metadaten müssen die Elemente "organisationName,role e electronicMailAddress sowie mindestens eines der Elemente phone e onlineResource</div></alert.M15>-->
+	<alert.M15missing><div>Datenmanager - fehlender Service</div></alert.M15missing>
+	<alert.M15org><div>Name der Organisation fehlt</div></alert.M15org>
+	<alert.M15poc><div>Position fehlt</div></alert.M15poc>
+	<alert.M15mail><div>E-Mail-Adresse e-mail fehlt</div></alert.M15mail>
+	<alert.M15phone><div>Es ist zwingend erforderlich, die Telefonnummer oder Adresse der Website einzugeben.</div></alert.M15phone>
+	<!--DATA/SERVICE IDENTIFICATION - PRESENTATION FORM-->
+	<M30>Daten/Dienstleistungen Identifikation - Präsentationsformat</M30>
+	<alert.M30><div>Das Element "presentationForm" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M30>
+	<!--DATA/SERVICE IDENTIFICATION - SPATIAL REPRESENTATION TYPE-->
+	<M31>Daten/Dienstleistungen Identifikation - Art der räumlichen Darstellung</M31>
+	<alert.M31><div>Das Element "spatialRepresentationType" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M31>
+	<!--DATA/SERVICE IDENTIFICATION - SPATIAL RESOLUTION-->
+	<M32>Daten/Dienstleistungen Identifikation - Räumliche Auflösung</M32>
+	<alert.M32><div>Das Element "spatialResolution" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M32>
+	<!--DATA/SERVICE IDENTIFICATION - GEOGRAPHIC LOCATION-->
+	<M33>Daten/Dienstleistungen Identifikation - Erweiterung - Geographische Lage</M33>
+	<alert.M33><div>Der geografische Begrenzungsrahmen fehlt</div></alert.M33>
+	<alert.M33a><div>Der geografische Begrenzungsrahmen darf nur einmal definiert werden.</div></alert.M33a>
+	<!--DATA/SERVICE QUALITY - SCOPE-->
+	<M34>Datenqualität - Qualitätsstufe</M34>
+	<alert.M34><div>Das Element "Scope" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M34>
+	<!--DATA/SERVICE QUALITY - POSITIONAL ACCURACY-->
+	<M35>Datenqualität - Positioniergenauigkeit</M35>
+	<alert.M35><div>Das Element "DQ_AbsoluteExternalPositionalAccuracy" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M35>
+	<!--DATA/SERVICE QUALITY - LINEAGE-->
+	<M36>Datenqualität - Genealogie</M36>
+	<alert.M36><div>Das Element "Lineage" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M36>
+	<!--DATA/SERVICE QUALITY -  CONFORMANCE REPORT - SPECIFICATION-->
+	<M37>Datenqualität - Konformität - technische Daten</M37>
+	<alert.M37><div>Das Element "DQ_ConformanceResult" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M37>
+	<!--REFERENCE SYSTEM-->
+	<M38>Räumliches Referenzsystem</M38>
+	<alert.M38><div>Das Element "referenceSystemInfo" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M38>
+
+    <alert.M38missing><div>Das Element "referenceSystemInfo" fehlt.</div></alert.M38missing>
+    <alert.M38toomany><div>Das Element "referenceSystemInfo" muss eindeutig sein.</div></alert.M38toomany>
+    <alert.M38badcodespace><div>Nur Folgendes "codeSpace" "http://www.epsg-registry.org" ist erlaubt</div></alert.M38badcodespace>
+    <alert.M38version><div>Die Version des "codeSpace" ist nicht erlaubt.</div></alert.M38version>
+
+    <report.M38count><div>Gefunden ein einzigartiges "referenceSystemInfo".</div></report.M38count>
+    <report.M38nocodespace><div>Der fehlende "codeSpace" kennzeichnet das Vorhandensein eines Codes aus der RNDT "codeList".</div></report.M38nocodespace>
+    <report.M38codespace><div>CodeSpace EPSG korrekt.</div></report.M38codespace>
+
+    <alert.M38code><div>Code nicht erkannt </div></alert.M38code>
+    <alert.M38badrndt><div>RNDT-Code erforderlich, aber nicht erkannt </div></alert.M38badrndt>
+    <alert.M38badepsg><div>EPSG-Code erforderlich, aber nicht anerkannt </div></alert.M38badepsg>
+    
+    <report.M38rndtcode><div>Korrekter RNDT-Code.</div></report.M38rndtcode>
+    <report.M38epsgcode><div>Korrekter EPSG-Code.</div></report.M38epsgcode>
+
+
+	<!--DATA/SERVICE IDENTIFICATION - KEYWORDS-->
+	<M39>Daten/Dienstleistungen Identifikation - Schlüsselwörter</M39>
+	<alert.M39><div>Das Element "descriptiveKeywords" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M39>
+	<!--DISTRIBUTION INFO - DISTRIBUTION FORMAT-->
+	<M45>Datenverteilung - Verteilungsformat</M45>
+	<alert.M45><div>Das Element "distributionFormat" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M45>
+	<!--DISTRIBUTION INFO - DISTRIBUTOR-->
+	<M46>Datenverteilung - Vertriebspartner</M46>
+	<alert.M46><div>Das Element "distributor" fehlt, ist unvollständig oder hat einen falschen Wert. Die Metadaten müssen die Elemente "organisationName","role" und "electronicMailAddress" sowie mindestens eines der Elemente "phone" und "onlineResource" enthalten.</div></alert.M46>
+	<!--CONSTRAINTS - USE LIMITATIONS-->
+	<M50>Datenbeschränkungen - Nutzungsbeschränkung</M50>
+	<alert.M50><div>Das Element "useLimitation" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M50>
+	<!--CONSTRAINTS - ACCESS CONSTRAINTS-->
+	<M51>Datenbeschränkungen - Zugriffsbeschränkungen</M51>
+	<alert.M51><div>Das Element "accessConstraints" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M51>
+	<!--CONSTRAINTS - ACCESS CONSTRAINTS-->
+	<M52>Datenbeschränkungen - Einschränkungen der Benutzerfreundlichkeit</M52>
+	<alert.M52><div>useConstraints" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M52>
+	<!--CONSTRAINTS - OTHER CONSTRAINTS-->
+	<M53>Datenbeschränkungen - Andere Einschränkungen</M53>
+	<alert.M53missing><div>Das Textelement [andere Einschränkungen]" ist obligatorisch, wenn <i>andere Einschränkungen</i> ausgewählt sind. Fügen Sie das Textelement hinzu.</div></alert.M53missing>
+	<alert.M53notneeded><div>Das Textelement [andere Einschränkungen] sollte nur erweitert werden, wenn <i>andere Einschränkungen</i> ausgewählt sind. Löschen Sie das Textelement.</div></alert.M53notneeded>
+	<!--CONTENT INFO - CONTENT TYPE (RASTER DATA)-->
+	<M60>Inhaltsinformationen - Inhaltsart (nur für Rasterdaten)</M60>
+	<alert.M60><div>Das Element "contentType" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M60>
+	<!--CONTENT INFO - ATTRIBUTE DESCRIPTION (RASTER DATA)-->
+	<M61>Inhaltsinformationen - Beschreibung der Attribute (nur für Rasterdaten)</M61>
+	<alert.M61><div>Das Element "attributeDescription" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M61>
+	<!--SPATIAL REPRESENTATION INFO - DIMENSIONS NUMBER (RASTER DATA)-->
+	<M62>Räumliche Darstellung - Anzahl der Dimensionen (nur bei Rasterdaten)</M62>
+	<alert.M62><div>Das Element "numberOfDimensions" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M62>
+	<!--SPATIAL REPRESENTATION INFO - AXIS DIMENSION PROPERTIES (RASTER DATA)-->
+	<M63>Räumliche Darstellung - Größeneigenschaften (nur für Rasterdaten)</M63>
+	<alert.M63><div>Das Element "axisDimensionProperties" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M63>
+	<!--SPATIAL REPRESENTATION INFO - CELL GEOEMTRY (RASTER DATA)-->
+	<M64>Räumliche Darstellung - Zellgeometrie (nur für Rasterdaten)</M64>
+	<alert.M64><div>Das Element "cellGeometry" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M64>
+	<!--SPATIAL REPRESENTATION INFO - TRANSFORMATION PARAMETER AVAILABILITY (RASTER DATA)-->
+	<M65>Räumliche Darstellung - Verfügbarkeit von Transformationskoeffizienten (nur für Rasterdaten)</M65>
+	<alert.M65><div>Das Element "transformationParameterAvailability" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M65>
+	<!--SPATIAL REPRESENTATION INFO - CHECK POINT AVAILABILITY (GEORECTIFIED RASTER DATA)-->
+	<M66>Räumliche Darstellung - Verfügbarkeit von Kontrollpunkten (nur für georektifizierte Rasterdaten) Rasterdaten)</M66>
+	<alert.M66><div>Das Element "checkPointAvailability" fehlt, ist unvollständig oder hat einen falschen Wert.</div></alert.M66>
+	<!--METADATA DATE FORMAT-->
+	<M99>Datum der Metadaten - Format</M99>
+	<alert.M99>Das Datum der Metadaten muss durch das Element gco:Date dokumentiert werden.</alert.M99>
+	<!--DATE FORMAT-->
+	<M100>Datum - Format</M100>
+	<alert.M100>Das Datum muss durch das Element gco:Date dokumentiert werden.</alert.M100>
+	<!--COD IPA-->
+	<M101>Identifikatoren - IPA-Code</M101>
+	<alert.M101>Den Identifikatoren muss der IPA-Code der zuständigen Behörde vorangestellt werden. Überprüfen Sie, ob die GeoNetwork SiteId korrekt konfiguriert ist.</alert.M101>
+	<!--COD IPA - PARENT IDENTIFIER-->
+	<M102>Vorherige Datei-ID - IPA-Code</M102>
+	<alert.M102>Die Kennung der vorherigen Datei muss als Präfix den IPA-Code der zuständigen Behörde enthalten.</alert.M102>
+	<!--COD IPA - IDENTIFIER-->
+	<M103>Ressourcen-ID - IPA-Code</M103>
+	<alert.M103>Dem Ressourcenbezeichner muss der IPA-Code der zuständigen Behörde vorangestellt werden.</alert.M103>
+	<!--COD IPA - SERIES-->
+	<M104>Id obere Ebene - IPA-Code</M104>
+	<alert.M104>Der Kennung der obersten Ebene muss der IPA-Code der zuständigen Behörde vorangestellt werden.</alert.M104>
+	<!--NIL REASON-->
+	<M110>Falsches Attribut</M110>
+	<alert.M110>Kein Metadatenelement kann das "gco:nilReason"-Attribut verwenden.</alert.M110>
+	<!--VERTICAL ELEMENT-->
+	<M111>Falsches Attribut</M111>
+	<alert.M111>Das vertikale CRS-Element muss das "xlink:href"-Attribut haben.</alert.M111>
+
+	<M112>Falsches Attribut</M112>
+	<alert.M112>Externe Referenz (XLink) auf Vertikales CRS darf nicht leer sein.</alert.M112>
+
+	<M120>Listenelemente</M120>
+	<alert.M120>Das Codelistenelement ist leer: </alert.M120>
+	
+	<M121>Name des Vorgangs</M121>
+	<alert.M121>Der Name der Operation fehlt</alert.M121>
+	
+	<M200>Zeitliche Erweiterung</M200>
+	<alert.M201>Das Startdatum der Verlängerung ist nicht festgelegt.</alert.M201>
+	<alert.M202>Das Enddatum der Verlängerung ist nicht festgelegt.</alert.M202>
+
+</strings>
